@@ -1,14 +1,14 @@
 import React from 'react';
 
 import { CardData } from './data/data';
-import Card from './components/Card';
+import CardList from './components/CardList';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <p>
-          <Card {...CardData} />
+          <CardList cards={CardData} />
         </p>
       </header>
     </div>
