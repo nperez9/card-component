@@ -8,6 +8,12 @@ const appReducer = (
   action: AppAction
 ): any => {
   switch (action.type) {
+    case Actions.SET_CARDS: 
+      return {
+        ...state,
+        cards: action.payload,
+      }
+
   }
 };
 

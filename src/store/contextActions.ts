@@ -1,10 +1,12 @@
-import { IAppState } from './background/AppState';
+import { CardProps } from '../components/Card/Card.types';
 
 enum Actions {
-  SET_TRANSACTIONS = 'SET_TRANSACTIONS',
-  SET_STATE = 'SET_STATE',
-  GET_TRANSACTIONS = 'GET_TRANSACTIONS',
-  SET_STEP = 'SET_STEP',
+  SET_CARDS = 'SET_CARDS',
+}
+
+export interface SetCards {
+  type: Actions.SET_CARDS
+  payload: CardProps[]
 }
 
 export default Actions;

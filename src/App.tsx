@@ -1,16 +1,14 @@
 import React from 'react';
 
-import { CardData } from './data/data';
+import AppState from './store/background/AppState';
 import CardList from './components/CardList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          <CardList cards={CardData} />
-        </p>
-      </header>
+      <AppState>
+        <CardList sort={{key: 'title', value: -1}} />
+      </AppState>
     </div>
   );
 }

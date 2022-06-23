@@ -1,16 +1,15 @@
 import React, { useReducer } from 'react';
 import AppContext from './AppContext';
 import AppReducer from './AppReducer';
-import Actions from '../contextActions';
+import { CardProps } from '../../components/Card/Card.types';
+import { CardData } from '../../data/data';
 
 export interface IAppState {
-  state?: { 
-    cards: Array<any>
-  };
+  cards?: Array<CardProps>
 }
 
 const defaultApp = {
-  cards: []
+  cards: CardData
 };
 
 const AppState = (props: any) => {

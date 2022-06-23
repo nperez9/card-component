@@ -8,4 +8,7 @@ export interface CardProps {
     target: '_blank' | '_self' | '_parent' | '_top' | string;
   }>;
   imageSrc?: string;
+  isHighlighted?: boolean;
 }
+
+export type CardKeys = keyof CardProps;

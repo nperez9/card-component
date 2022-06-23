@@ -1,0 +1,10 @@
+.Highlighted {
+  background-color: #03d1cc;
+  border: 1px solid green;
+}
+
+.FlexBody {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}

@@ -1,7 +1,9 @@
 .CardList {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .CardList > * {
   width: 300px;
+  margin: 10px;
 }
